@@ -4,6 +4,7 @@ body {
 }
 
 .container {
+  width: 100%;
   margin-top: 10%;
 }
 
@@ -37,7 +38,8 @@ body {
   align-items: center;
   box-shadow: 5px 10px 18px #f8f9fa;
 }
-.hr1, .hr2 {
+.hr1,
+.hr2 {
   margin: 0px;
   border: none;
 }
@@ -85,7 +87,7 @@ body {
 
 .container .Sous_container {
   display: flex;
-  width: 50%;
+  width: 80%;
   margin: 20px auto;
   height: auto;
   padding: 20px 0px;

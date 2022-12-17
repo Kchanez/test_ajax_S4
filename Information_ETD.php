@@ -7,17 +7,36 @@
 <head>
 	<title>Formulaire</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
+	<!-- CSS only -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
     </head>
+	<style>
+		form 
+		{
+			width : 100%;
+			margin-top: 20px;
+		}
+	</style>
 <body>
+	<style>
+		#level 
+		{
+			width: 35%;
+			height:30px;
+			margin:20px;
+			padding:5px;
+			font-size:15px;
+		}
+	</style>
 	<div class="container">
 		<?php include_once 'header.php'; ?>
 		<div class="Sous_container">
 			<form method="" action="">
 			<div class="mb-3">
 			  <label for="exampleFormControlInput1" class="form-label"></label>
-			  <input type="text" class="form-control" name="nom" id="exampleFormControlInput1" placeholder="votre nom">
+			  <input type="text" class="form-control" name="nom" id="exampleFormControlInput1" placeholder="veuillez entrer le nom que vous cherchez">
 			</div>
 			<div id="show_info_etd">
 				<?php
@@ -26,7 +45,7 @@
 			</div>
 			<div class="mb-3">
 			  <label for="exampleFormControlInput2" class="form-label">Choose your level :</label>
-				 <select name="level" id="level">
+				 <select class="custom-select" name="level" id="level" >
 				  <option> votre level</option>
 				  <option value="lp1">lp1</option>
 				  <option value="lp2">lp2</option>
