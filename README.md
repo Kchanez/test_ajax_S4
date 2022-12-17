@@ -1,0 +1,1 @@
+"# Getting Informations with AJAX" 
